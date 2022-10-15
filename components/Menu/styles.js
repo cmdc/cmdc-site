@@ -114,7 +114,7 @@ export const SocialMedia = styled(DefaultSocialMedia)`
 `;
 
 export const Navigation = styled.nav`
-  height: 592px;
+  height: 462px;
 
   ${({ theme }) => theme.breakpoints.small`
     position: absolute;
@@ -138,10 +138,15 @@ export const Link = styled(motion.a)`
   align-items: center;
   font-size: 57px;
   font-size: 3.5625rem;
-  line-height: 1.5964912281;
+  line-height: 1.33;
   font-weight: 900;
   text-transform: uppercase;
   will-change: transform;
+
+  ${({ theme }) => theme.breakpoints.medium`
+    font-size: 1.65rem;
+    line-height: 1.7;
+  `};
 
   ${({ theme }) => theme.breakpoints.tablet`
     font-size: 1.75rem;
