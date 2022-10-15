@@ -109,7 +109,7 @@ const FeaturedProject = () => {
         <MenuContainer>
           <MenuButton
             sticky={false}
-            title="Some projects"
+            title="recent projects"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />

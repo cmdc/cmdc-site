@@ -97,7 +97,7 @@ const Menu = () => {
         <Backdrop onAnimationComplete={handleAnimationComplete}>
           <Container ref={containerRef}>
             <Header>
-              <h3>Some Projects</h3>
+              <h3>some recent projects</h3>
               <CloseButton title="Close" />
             </Header>
             <Navigation>

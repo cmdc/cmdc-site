@@ -79,7 +79,7 @@ const AppBar = (props) => {
           </StyledLink>
         </Link>
         <MenuWrapper>
-          <MenuButton title="Some Projects" />
+          <MenuButton title="recent projects" />
         </MenuWrapper>
       </Container>
     </Slider>

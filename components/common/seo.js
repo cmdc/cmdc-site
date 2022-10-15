@@ -6,8 +6,11 @@ const Seo = ({ seo }) => {
   //const { defaultSeo, siteName } = useContext(GlobalContext);
 
   const fullSeo = {
-    // Add title suffix
+    // Add title
     metaTitle: `cmdc`,
+    // Add description
+    metaDescription:
+      "the best way to code is search a thing already done, and play like Lego game",
     // Get full image URL
     shareImage: `/facivon.png`,
   };

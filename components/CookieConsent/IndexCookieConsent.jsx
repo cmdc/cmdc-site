@@ -26,7 +26,9 @@ const IndexCookieConsent = () => {
       location={"bottom"}
       style={{
         backgroundColor: state.theme === "dark" ? "#2b2b2b" : "#f3f4f6",
-        opacity: 0.5,
+        opacity: 0.65,
+        paddingTop: "1rem",
+        paddingBottom: "0.75rem",
         background: "#fffff",
         alignItems: "center",
         paddingLeft: "1.75rem",

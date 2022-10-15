@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cmdc.it
+
+# Sitemaps
+Sitemap: https://cmdc.it/sitemap.xml

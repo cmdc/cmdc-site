@@ -1,5 +1,5 @@
 import App from "next/app";
-import React, { createContext } from "react";
+import React from "react";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -19,8 +19,6 @@ import SiteOfTheDay from "../components/SiteOfTheDay";
 import "../styles/globals.css";
 
 const IndexApp = ({ Component, pageProps }) => {
-  const { global } = pageProps;
-
   return (
     <>
       <Head>
@@ -29,21 +27,19 @@ const IndexApp = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
         />
       </Head>
-      <GlobalContext.Provider value={global?.attributes}>
-        <ThemeContextProvider>
-          <MenuContextProvider>
-            <CursorContextProvider>
-              <ThemedApp>
-                <IndexCookieConsent />
-                <Header />
-                <Menu />
-                <Component {...pageProps} />
-                <Cursor />
-              </ThemedApp>
-            </CursorContextProvider>
-          </MenuContextProvider>
-        </ThemeContextProvider>
-      </GlobalContext.Provider>
+      <ThemeContextProvider>
+        <MenuContextProvider>
+          <CursorContextProvider>
+            <ThemedApp>
+              <IndexCookieConsent />
+              <Header />
+              <Menu />
+              <Component {...pageProps} />
+              <Cursor />
+            </ThemedApp>
+          </CursorContextProvider>
+        </MenuContextProvider>
+      </ThemeContextProvider>
     </>
   );
 };
@@ -66,9 +62,6 @@ const ThemedApp = ({ children }) => {
     </ThemeProviderNew>
   );
 };
-
-// Store Strapi Global object in context
-export const GlobalContext = createContext({});
 
 IndexApp.getInitialProps = async (ctx) => {
   const appProps = await App.getInitialProps(ctx);
