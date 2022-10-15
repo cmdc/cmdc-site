@@ -6,6 +6,42 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: calibre;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/CalibreTest-Regular.otf") format("opentype"),
+    url("/fonts/calibre-test-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: calibre;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/CalibreTest-Black.otf") format("opentype"),
+    url("/fonts/calibre-test-black.woff") format("woff");
+}
+
+/* @font-face {
+  font-family: Chakra Petch;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/ChakraPetch-Regular.otf") format("opentype"),
+    url("/fonts/chakra-petch-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Chakra Petch;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/ChakraPetch-Bold.otf") format("opentype"),
+    url("/fonts/chakra-petch-Bold.woff") format("woff");
+} */
+
 a {
   color: inherit;
   text-decoration: none;
