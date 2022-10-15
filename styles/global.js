@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -18,8 +18,7 @@ export default createGlobalStyle`
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: sans-serif;
-    font-family: calibre, sans-serif;
+    font-family: Chakra Petch, calibre, sans-serif;
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */

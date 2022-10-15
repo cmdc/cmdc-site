@@ -1,5 +1,5 @@
 const DEFAULT_OPTIONS = {
-  background: '#000',
+  background: "#000",
   completeRatio: 1,
   enabled: true,
   onComplete: null,
@@ -8,7 +8,7 @@ const DEFAULT_OPTIONS = {
 };
 
 const getElementComputedStyled = (element, prop) =>
-  parseFloat(getComputedStyle(element, null)[prop].replace('px', ''));
+  parseFloat(getComputedStyle(element, null)[prop].replace("px", ""));
 
 const factory = () => {
   let _canvas = null;
@@ -53,7 +53,7 @@ const factory = () => {
     }
   };
 
-  const _onMouseMove = event => {
+  const _onMouseMove = (event) => {
     event.preventDefault();
 
     const { enabled, posX, posY, scaleRatio, touchX, touchY } = _data;
@@ -72,7 +72,7 @@ const factory = () => {
     _data.touchY = currentY;
   };
 
-  const _onMouseDown = event => {
+  const _onMouseDown = (event) => {
     event.preventDefault();
 
     const { enabled, posX, posY, scaleRatio } = _data;
@@ -92,10 +92,10 @@ const factory = () => {
       _context.stroke();
     }
 
-    _canvas.addEventListener('mousemove', _onMouseMove);
+    _canvas.addEventListener("mousemove", _onMouseMove);
   };
 
-  const _onMouseClick = event => {
+  const _onMouseClick = (event) => {
     event.preventDefault();
 
     const { enabled, posX, posY, scaleRatio } = _data;
@@ -115,13 +115,13 @@ const factory = () => {
       _context.stroke();
     }
 
-    _canvas.addEventListener('mousemove', _onMouseMove);
+    _canvas.addEventListener("mousemove", _onMouseMove);
   };
 
   const init = (source, options = {}) => {
     if (!source) {
       throw new Error(
-        'No source element provided. It must be an HTML canvas element.',
+        "No source element provided. It must be an HTML canvas element."
       );
     }
 
@@ -129,7 +129,7 @@ const factory = () => {
     const { size, background } = currentOptions;
 
     _canvas = source;
-    _context = _canvas.getContext('2d');
+    _context = _canvas.getContext("2d");
     const devicePixelRatio = window.devicePixelRatio || 1;
     const backingStoreRatio =
       _context.webkitBackingStorePixelRatio ||
@@ -140,8 +140,8 @@ const factory = () => {
       1;
     const scaleRatio = devicePixelRatio / backingStoreRatio;
 
-    const realWidth = getElementComputedStyled(_canvas, 'width');
-    const realHeight = getElementComputedStyled(_canvas, 'height');
+    const realWidth = getElementComputedStyled(_canvas, "width");
+    const realHeight = getElementComputedStyled(_canvas, "height");
     const width = realWidth * scaleRatio;
     const height = realHeight * scaleRatio;
 
@@ -153,8 +153,8 @@ const factory = () => {
     } else {
       _canvas.width = realWidth;
       _canvas.height = realHeight;
-      _canvas.style.width = '';
-      _canvas.style.height = '';
+      _canvas.style.width = "";
+      _canvas.style.height = "";
     }
 
     // _context.scale(scaleRatio, scaleRatio);
@@ -163,16 +163,17 @@ const factory = () => {
     _context.drawImage(_canvas, 0, 0, width, height);
 
     // prepare context for drawing operations
-    _context.globalCompositeOperation = 'destination-out';
+    _context.globalCompositeOperation = "destination-out";
     _context.lineWidth = size;
-    _context.lineCap = 'round';
+    _context.lineCap = "round";
 
     // bind events
-    _canvas.addEventListener('mouseenter', _onMouseDown);
-    _canvas.addEventListener('click', _onMouseClick);
-    // _canvas.addEventListener('touchstart', _onTouchStart);
-    // _canvas.addEventListener('touchmove', _onTouchMove);
-    // _canvas.addEventListener('touchend', _onTouchEnd);
+    _canvas.addEventListener("mouseenter", _onMouseDown);
+    _canvas.addEventListener("click", _onMouseClick);
+
+    // _canvas.addEventListener("touchstart", _onMouseDown);
+    // _canvas.addEventListener("touchmove", _onMouseClick);
+    // _canvas.addEventListener("touchend", _onTouchEnd);
 
     // reset parts
     const parts = [];
@@ -223,9 +224,9 @@ const factory = () => {
   const reset = () => {
     const { w, h, numParts } = _data;
 
-    _context.globalCompositeOperation = 'source-over';
+    _context.globalCompositeOperation = "source-over";
     _context.drawImage(_canvas, 0, 0, w, h);
-    _context.globalCompositeOperation = 'destination-out';
+    _context.globalCompositeOperation = "destination-out";
 
     for (let i = 0; i < numParts; i++) {
       _data.parts[i] = 1;

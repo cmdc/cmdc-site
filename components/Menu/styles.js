@@ -114,7 +114,7 @@ export const SocialMedia = styled(DefaultSocialMedia)`
 `;
 
 export const Navigation = styled.nav`
-  height: 462px;
+  height: 592px;
 
   ${({ theme }) => theme.breakpoints.small`
     position: absolute;

@@ -1,8 +1,13 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+import { useThemeContext } from "../../context/theme";
+import useStyledTheme from "../../hooks/useStyledTheme";
 
 const IndexCookieConsent = () => {
+  const theme = useStyledTheme();
+  const [state] = useThemeContext();
+
   const handleAcceptCookie = () => {
     window.gtag("consent", "update", {
       ad_storage: "granted",
@@ -20,6 +25,8 @@ const IndexCookieConsent = () => {
       disableStyles={false}
       location={"bottom"}
       style={{
+        backgroundColor: state.theme === "dark" ? "#2b2b2b" : "#f3f4f6",
+        opacity: 0.5,
         background: "#fffff",
         alignItems: "center",
         paddingLeft: "1.75rem",
@@ -27,7 +34,7 @@ const IndexCookieConsent = () => {
       }}
       overlay={false}
       buttonStyle={{
-        background: "#D6BA4B",
+        background: theme.colors.cmdc,
         margin: "0rem",
         marginBottom: "1rem",
         borderRadius: "9999px",
@@ -44,11 +51,11 @@ const IndexCookieConsent = () => {
         boxShadow:
           "0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)",
       }}
+      contentStyle={{
+        backgroundColor: state.theme === "dark" ? "#2b2b2b" : "#f3f4f6",
+        color: state.theme === "dark" ? "#ffffff" : "#000000",
+      }}
       containerClasses="bg-gray-100 dark:bg-black sm:flex md:h-40"
-      contentClasses="bg-gray-100 dark:bg-black text-black dark:text-white"
-      buttonWrapperClasses="bg-gray-100 dark:bg-black mdMax:w-full"
-      buttonClasses="w-full lg:w-48 px-3 py-1 bg-gray-300 hover:bg-gray-200 hover:underline rounded text-gray-700 mr-2 mb-5 uppercase tracking-widest text-xs font-bold"
-      declineButtonClasses="w-full lg:w-48 px-3 py-1 bg-gray-300 hover:bg-gray-200 hover:underline rounded text-gray-700 mr-2 mb-5 uppercase tracking-widest text-xs font-bold"
       buttonText="Accept"
       onAccept={(acceptedByScrolling) => {
         return acceptedByScrolling

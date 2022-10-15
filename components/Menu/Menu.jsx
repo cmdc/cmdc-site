@@ -164,7 +164,8 @@ const Menu = () => {
               {isMobile && (
                 <Address>
                   <FooterText>
-                    15 Camburhill Ct Unit C<br /> Charlottetown, PE C1E 0E2
+                    Via XX Settembre
+                    <br /> PZ
                   </FooterText>
                 </Address>
               )}

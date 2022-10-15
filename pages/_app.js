@@ -57,8 +57,6 @@ const Header = () => <AppBar direction="down" renderAs="header" />;
 
 const ThemedApp = ({ children }) => {
   const [state] = useThemeContext();
-  console.log("state: ", state);
-  state.theme = "dark";
   const currentTheme = themes[state.theme];
 
   return (

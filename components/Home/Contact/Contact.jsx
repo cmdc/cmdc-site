@@ -29,9 +29,15 @@ const Contact = () => {
             cmdc.business@gmail.com
           </a>
         </div>
-        <address className="column contact-text">
-          15 Camburhill Ct Unit C<br /> Charlottetown, PE C1E 0E2
-        </address>
+        <a
+          href="https://www.google.com/maps?q=Potenza,+85100"
+          onMouseEnter={addCursorBorder}
+          onMouseLeave={removeCursorBorder}
+          className="column contact-text"
+        >
+          Via XX Settembre
+          <br /> PZ
+        </a>
         <SocialMedia className="column" />
       </ContactSection>
     </AnimateOnScreen>

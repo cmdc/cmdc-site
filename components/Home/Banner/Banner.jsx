@@ -35,12 +35,13 @@ const Banner = () => {
     <BannerSection style={{ height: windowSize.height }}>
       <VideoContainer>
         <video
-          src="/videos/banner.mp4"
+          src="/videos/video.mp4"
           height="100%"
           width="100%"
           loop
           autoPlay
           muted
+          playsInline
         />
       </VideoContainer>
       <CanvasEraser

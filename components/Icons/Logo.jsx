@@ -33,6 +33,7 @@ const Logo = (props) => {
       fill={theme.text}
       onMouseEnter={addCursorBorder}
       onMouseLeave={removeCursorBorder}
+      onClick={handleToggleTheme}
       {...rootProps}
     >
       <path
@@ -44,7 +45,6 @@ const Logo = (props) => {
         fill={theme.colors.cmdc}
         onMouseEnter={() => addCursorColor(theme.text)}
         onMouseLeave={resetCursorColor}
-        onClick={handleToggleTheme}
         {...buttonProps}
       />
     </svg>

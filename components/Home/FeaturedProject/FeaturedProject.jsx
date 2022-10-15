@@ -1,12 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
-import { motion, useAnimation } from 'framer-motion';
-import { useMenuContext } from '../../../context/menu';
-import useCursorStyle from '../../../hooks/useCursorStyle';
-import useMediaQuery from '../../../hooks/useMediaQuery';
-import useStyledTheme from '../../../hooks/useStyledTheme';
-import AnimateOnScreen from '../../AnimateOnScreen';
-import Arrow from '../../Icons/Arrow';
+import React from "react";
+import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useMenuContext } from "../../../context/menu";
+import useCursorStyle from "../../../hooks/useCursorStyle";
+import useMediaQuery from "../../../hooks/useMediaQuery";
+import useStyledTheme from "../../../hooks/useStyledTheme";
+import AnimateOnScreen from "../../AnimateOnScreen";
+import Arrow from "../../Icons/Arrow";
 import {
   ContentSection,
   ProjectAnchor,
@@ -15,7 +15,7 @@ import {
   VideoPreview,
   MenuContainer,
   MenuButton,
-} from './styles';
+} from "./styles";
 
 const transition = {
   duration: 0.45,
@@ -34,7 +34,7 @@ const FeaturedProject = () => {
     removeCursorBorder,
   } = useCursorStyle();
   const isTabletView = useMediaQuery(
-    ({ breakpoints }) => `(max-width:${breakpoints.sizes.tablet}px)`,
+    ({ breakpoints }) => `(max-width:${breakpoints.sizes.tablet}px)`
   );
 
   const handleMouseEnter = React.useCallback(() => {
@@ -75,7 +75,7 @@ const FeaturedProject = () => {
     <ContentSection>
       <AnimateOnScreen>
         <motion.div>
-          <Link href="/projects/not-humble" passHref>
+          <Link href="https://sani3d.online" passHref>
             <ProjectAnchor
               onHoverStart={handleAnchorHoverStart}
               onHoverEnd={handleAnchorHoverEnd}
@@ -88,11 +88,11 @@ const FeaturedProject = () => {
                   transition={transition}
                   className="project-info"
                 >
-                  <h4>PEI Seafood</h4>
-                  <h4>2019</h4>
+                  <h4>Covid-19</h4>
+                  <h4>2020</h4>
                 </motion.div>
                 <ProjectTitle>
-                  NOT <br /> HUMBLE
+                  SANI <br /> 3D
                   <span className="arrow">
                     <Arrow animate={controlsArrow} transition={transition} />
                   </span>
@@ -109,7 +109,7 @@ const FeaturedProject = () => {
         <MenuContainer>
           <MenuButton
             sticky={false}
-            title="All Projects"
+            title="Some projects"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />

@@ -1,35 +1,35 @@
-import React from 'react';
-import items from '../../../utils/constants/services-items';
-import useCursorStyle from '../../../hooks/useCursorStyle';
-import AnimateOnScreen from '../../AnimateOnScreen';
+import React from "react";
+import items from "../../../utils/constants/services-items";
+import useCursorStyle from "../../../hooks/useCursorStyle";
+import AnimateOnScreen from "../../AnimateOnScreen";
 import {
   ContentSection,
   TextWrapper,
   ServicesWrapper,
   AccordionToggle,
   AccordionContent,
-} from './styles';
+} from "./styles";
 
 const About = () => {
   const [selectedItem, setSelectedItem] = React.useState(0);
   const { addCursorBorder, removeCursorBorder } = useCursorStyle();
 
   const handleMouseEnter = React.useCallback(
-    curr => {
+    (curr) => {
       if (curr === selectedItem) return;
 
       addCursorBorder();
     },
-    [selectedItem, addCursorBorder],
+    [selectedItem, addCursorBorder]
   );
 
   const handleMouseLeave = React.useCallback(
-    curr => {
+    (curr) => {
       if (curr === selectedItem) return;
 
       removeCursorBorder();
     },
-    [selectedItem, removeCursorBorder],
+    [selectedItem, removeCursorBorder]
   );
 
   return (
@@ -37,15 +37,17 @@ const About = () => {
       <ContentSection>
         <TextWrapper>
           <h2>
-            Furrow is an integrated, full-service creative studio offering video
-            production, creative development, and post-production services.
+            cmdc is an IT Consultant, we follow our customers with passion and
+            dedication
           </h2>
           <p>
-            Everybody’s got a story. And we don’t stop until we’ve uncovered
-            what makes yours worth telling. Whether it’s working directly with
-            you, an agency partner, or putting the finishing touches on
-            something special, we’re ready to dig in and get our hands dirty—are
-            you?
+            our best advertising is the testimonials of ours customers. We
+            follow different types of reality, and we are not afraid of to
+            experiment. Over time we have developed expertise in design and
+            implementation of IT solutions, skills for the system engineering of
+            company networks, numerical control systems for the manufacturing,
+            artificial intelligence AI and internet of things IOT. Do you want
+            to know us? contact us!
           </p>
         </TextWrapper>
         <ServicesWrapper>
@@ -61,7 +63,7 @@ const About = () => {
                 {item}
               </AccordionToggle>
               <AccordionContent
-                animate={{ height: itemIndex === selectedItem ? '100%' : '0' }}
+                animate={{ height: itemIndex === selectedItem ? "100%" : "0" }}
                 transition={{ duration: 0.7, ease: [0, 0.7, 0.29, 0.97] }}
               >
                 {services.map((service, serviceIndex) => (

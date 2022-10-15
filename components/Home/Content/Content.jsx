@@ -1,6 +1,6 @@
-import React from 'react';
-import AnimateOnScreen from '../../AnimateOnScreen';
-import { ContentSection, TextWrapper, Text } from './styles';
+import React from "react";
+import AnimateOnScreen from "../../AnimateOnScreen";
+import { ContentSection, TextWrapper, Text } from "./styles";
 
 const Content = () => {
   return (
@@ -8,11 +8,9 @@ const Content = () => {
       <ContentSection>
         <TextWrapper>
           <Text>
-            Great stories don’t just happen—
-            <br />
-            they need to be uncovered. And we dig deep to discover the great
-            stories that lie just below the surface. Dirt under our fingernails
-            and all.
+            IT Consultant
+            <br /> we have been in the game for years and are able to help you
+            bring your ideas and projects to life from A to Z
           </Text>
         </TextWrapper>
       </ContentSection>
