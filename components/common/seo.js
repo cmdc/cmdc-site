@@ -13,6 +13,10 @@ const Seo = ({ seo }) => {
       "the best way to code is search a thing already done, and play like Lego game",
     // Get full image URL
     shareImage: `/facivon.png`,
+    // Keywords
+    metaKeyword: `it consultant, cmdc, full stack, developers`,
+    // Author
+    metaAuthor: `cmdc`,
   };
 
   return (
@@ -40,6 +44,9 @@ const Seo = ({ seo }) => {
       )}
       {fullSeo.article && <meta property="og:type" content="article" />}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="description" content={fullSeo.metaDescription} />
+      <meta name="keywords" content={fullSeo.metaKeyword} />
+      <meta name="author" content={fullSeo.metaAuthor} />
     </Head>
   );
 };
