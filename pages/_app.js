@@ -20,27 +20,19 @@ import "../styles/globals.css";
 
 const IndexApp = ({ Component, pageProps }) => {
   return (
-    <>
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
-        />
-      </Head>
-      <ThemeContextProvider>
-        <MenuContextProvider>
-          <CursorContextProvider>
-            <ThemedApp>
-              <IndexCookieConsent />
-              <Header />
-              <Menu />
-              <Component {...pageProps} />
-              <Cursor />
-            </ThemedApp>
-          </CursorContextProvider>
-        </MenuContextProvider>
-      </ThemeContextProvider>
-    </>
+    <ThemeContextProvider>
+      <MenuContextProvider>
+        <CursorContextProvider>
+          <ThemedApp>
+            <IndexCookieConsent />
+            <Header />
+            <Menu />
+            <Component {...pageProps} />
+            <Cursor />
+          </ThemedApp>
+        </CursorContextProvider>
+      </MenuContextProvider>
+    </ThemeContextProvider>
   );
 };
 
