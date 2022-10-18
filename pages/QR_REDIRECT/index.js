@@ -40,7 +40,7 @@ export async function getServerSideProps({ req, query }) {
     // LAST 20
     const lasts = await collection
       .find({})
-      .sort({ metacritic: -1 })
+      .sort({ timestamp: -1 })
       .limit(20)
       .toArray();
 
