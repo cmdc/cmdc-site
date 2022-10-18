@@ -12,7 +12,7 @@ const Seo = ({ seo }) => {
     metaDescription:
       "the best way to code is search a thing already done, and play like Lego game",
     // Get full image URL
-    shareImage: `/social.png`,
+    shareImage: `/social.jpg`,
     // Keywords
     metaKeyword: `it consultant, cmdc, full stack, developers`,
     // Author
