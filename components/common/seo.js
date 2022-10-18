@@ -12,7 +12,7 @@ const Seo = ({ seo }) => {
     metaDescription:
       "the best way to code is search a thing already done, and play like Lego game",
     // Get full image URL
-    shareImage: `/social.jpg`,
+    shareImage: `https://cmdc.it/social.jpg`,
     // Keywords
     metaKeyword: `it consultant, cmdc, full stack, developers`,
     // Author
@@ -29,7 +29,7 @@ const Seo = ({ seo }) => {
           <meta property="og:title" content={fullSeo.metaTitle} />
           <meta name="twitter:title" content={fullSeo.metaTitle} />
           <meta property="og:image:alt" content={fullSeo.metaTitle} />
-          <meta property="og:site_name" content={fullSeo.metaTitle}></meta>
+          <meta property="og:site_name" content={fullSeo.metaTitle} />
         </>
       )}
       {fullSeo.metaDescription && (
