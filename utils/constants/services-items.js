@@ -1,5 +1,5 @@
 export default [
-  ["web application", ["cms", "crm", "pwa", "website", "seo"]],
+  ["web application", ["cms", "crm", "pwa", "website", "seo", "ecommerce"]],
   [
     "knowledge",
     [
