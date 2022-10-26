@@ -14,8 +14,8 @@ const QR = ({ count, lasts }) => {
           lasts.map((item, index) => {
             return (
               <div key={index}>
-                Timestamp: {item?.timestamp}, Platform: {item?.platform}, Ip:{" "}
-                {item?.ip}, UserAgent: {item.userAgent}
+                {item?.type} Timestamp: {item?.timestamp}, Platform:{" "}
+                {item?.platform}, Ip: {item?.ip}, UserAgent: {item.userAgent}
               </div>
             );
           })}
@@ -53,6 +53,7 @@ export async function getServerSideProps({ req, query }) {
   } else {
     // UPDATE COLLECTIONS DB
     await collection.insertOne({
+      type: "classic",
       timestamp: new Date(),
       platform: platform,
       userAgent: userAgent,
