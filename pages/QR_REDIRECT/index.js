@@ -10,15 +10,189 @@ const QR = ({ count, lasts }) => {
         <p>COUNT: {count}</p>
         <br />
         <p>LAST:</p>
-        {lasts.length > 0 &&
-          lasts.map((item, index) => {
-            return (
-              <div key={index}>
-                {item?.type} Timestamp: {item?.timestamp}, Platform:{" "}
-                {item?.platform}, Ip: {item?.ip}, UserAgent: {item.userAgent}
-              </div>
-            );
-          })}
+        <div style={{ overflow: "hidden" }}>
+          <table style={{ minWidth: "100%", tableLayout: "fixed" }}>
+            <thead>
+              <tr>
+                <th scope="col" style={{ padding: "1rem" }}>
+                  N.
+                </th>
+                <th
+                  scope="col"
+                  style={{
+                    paddingTop: "0.75rem",
+                    paddingBottom: "0.75rem",
+                    paddingLeft: "1.5rem",
+                    paddingRight: "1.5rem",
+                    fontSize: "0.75",
+                    lineHeight: "1rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.05em",
+                    textAlign: "left",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Type
+                </th>
+                <th
+                  scope="col"
+                  style={{
+                    paddingTop: "0.75rem",
+                    paddingBottom: "0.75rem",
+                    paddingLeft: "1.5rem",
+                    paddingRight: "1.5rem",
+                    fontSize: "0.75",
+                    lineHeight: "1rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.05em",
+                    textAlign: "left",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Timestamp
+                </th>
+                <th
+                  scope="col"
+                  style={{
+                    paddingTop: "0.75rem",
+                    paddingBottom: "0.75rem",
+                    paddingLeft: "1.5rem",
+                    paddingRight: "1.5rem",
+                    fontSize: "0.75",
+                    lineHeight: "1rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.05em",
+                    textAlign: "left",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Platform
+                </th>
+                <th
+                  scope="col"
+                  style={{
+                    paddingTop: "0.75rem",
+                    paddingBottom: "0.75rem",
+                    paddingLeft: "1.5rem",
+                    paddingRight: "1.5rem",
+                    fontSize: "0.75",
+                    lineHeight: "1rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.05em",
+                    textAlign: "left",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Ip
+                </th>
+                <th
+                  scope="col"
+                  style={{
+                    paddingTop: "0.75rem",
+                    paddingBottom: "0.75rem",
+                    paddingLeft: "1.5rem",
+                    paddingRight: "1.5rem",
+                    fontSize: "0.75",
+                    lineHeight: "1rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.05em",
+                    textAlign: "left",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  UserAgent
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {lasts.length > 0 &&
+                lasts.map((item, index) => {
+                  return (
+                    <tr key={index}>
+                      <td
+                        style={{
+                          padding: "1rem",
+                          width: "1rem",
+                        }}
+                      >
+                        {index + 1}
+                      </td>
+                      <td
+                        style={{
+                          paddingTop: "1rem",
+                          paddingBottom: "1rem",
+                          paddingLeft: "1.5rem",
+                          paddingRight: "1.5rem",
+                          fontSize: "0.875",
+                          lineHeight: "1.25rem",
+                          fontWeight: 500,
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {item?.type}
+                      </td>
+                      <td
+                        style={{
+                          paddingTop: "1rem",
+                          paddingBottom: "1rem",
+                          paddingLeft: "1.5rem",
+                          paddingRight: "1.5rem",
+                          fontSize: "0.875",
+                          lineHeight: "1.25rem",
+                          fontWeight: 500,
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {new Date(item?.timestamp).toLocaleString()}
+                      </td>
+                      <td
+                        style={{
+                          paddingTop: "1rem",
+                          paddingBottom: "1rem",
+                          paddingLeft: "1.5rem",
+                          paddingRight: "1.5rem",
+                          fontSize: "0.875",
+                          lineHeight: "1.25rem",
+                          fontWeight: 500,
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {item?.platform}
+                      </td>
+                      <td
+                        style={{
+                          paddingTop: "1rem",
+                          paddingBottom: "1rem",
+                          paddingLeft: "1.5rem",
+                          paddingRight: "1.5rem",
+                          fontSize: "0.875",
+                          lineHeight: "1.25rem",
+                          fontWeight: 500,
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {item?.ip}
+                      </td>
+                      <td
+                        style={{
+                          paddingTop: "1rem",
+                          paddingBottom: "1rem",
+                          paddingLeft: "1.5rem",
+                          paddingRight: "1.5rem",
+                          fontSize: "0.875",
+                          lineHeight: "1.25rem",
+                          fontWeight: 500,
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {item?.userAgent}
+                      </td>
+                    </tr>
+                  );
+                })}
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );
