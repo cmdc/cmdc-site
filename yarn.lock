@@ -3838,6 +3838,11 @@ uvu@^0.5.0:
     kleur "^4.0.3"
     sade "^1.7.3"
 
+vcard-creator@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/vcard-creator/-/vcard-creator-0.5.0.tgz#d6b7f5248e24deed93707952e42e2cf66792eaae"
+  integrity sha512-V9GfkI4HqTlAKwMDLmqcRk+xLrlryQ6937rZcCz39uf5oLlTXmRL9Oz7ivefG71BrtOI6QtDMXHtQCuwSvmtGQ==
+
 vfile-message@^3.0.0:
   version "3.1.2"
   resolved "https://registry.npmjs.org/vfile-message/-/vfile-message-3.1.2.tgz"
