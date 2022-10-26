@@ -23,7 +23,7 @@ export default function handler(req, res) {
     .addEmail("samuelpascale03@gmail.com", "PREF;HOME")
     .addEmail("cmdc.business@gmail.com", "WORK")
     .addPhoneNumber(3891783296, "PREF;WORK")
-    .addAddress(null, null, "", "", null, "85100", "Potenza")
+    .addAddress("", "", "", "Potenza", "PZ", "85100", "Italy", "WORK")
     .addURL("http://cmdc.it");
 
   //res.status(200).json({ name: "Samuel" });
