@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { motion, useAnimation } from "framer-motion";
 import { useMenuContext } from "../../../context/menu";
 import useCursorStyle from "../../../hooks/useCursorStyle";
@@ -16,6 +17,10 @@ import {
   MenuContainer,
   MenuButton,
 } from "./styles";
+
+const Video = dynamic(import("../../common/video"), {
+  ssr: false,
+});
 
 const transition = {
   duration: 0.45,
@@ -75,7 +80,7 @@ const FeaturedProject = () => {
     <ContentSection>
       <AnimateOnScreen>
         <motion.div>
-          <Link href="https://sani3d.online" passHref>
+          <Link title="Sani3d" href="https://sani3d.online" passHref>
             <ProjectAnchor
               onHoverStart={handleAnchorHoverStart}
               onHoverEnd={handleAnchorHoverEnd}
@@ -99,13 +104,7 @@ const FeaturedProject = () => {
                 </ProjectTitle>
               </ProjectInfo>
               <VideoPreview>
-                <video
-                  src="videos/sani3d.mp4"
-                  loop
-                  autoPlay
-                  muted
-                  playsInline
-                />
+                <Video src="videos/sani3d.mp4" />
               </VideoPreview>
             </ProjectAnchor>
           </Link>

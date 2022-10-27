@@ -7,7 +7,7 @@ const Seo = ({ seo }) => {
 
   const fullSeo = {
     // Add title
-    metaTitle: `cmdc`,
+    metaTitle: `cmdc | the best way to code`,
     // Add description
     metaDescription:
       "the best way to code is search a thing already done, and play like Lego game",

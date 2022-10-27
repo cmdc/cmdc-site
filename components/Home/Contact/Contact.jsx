@@ -12,6 +12,7 @@ const Contact = () => {
       <ContactSection>
         <div className="column">
           <a
+            title="Phone Number"
             className="contact-text"
             href="tel:+3938917832XX"
             onMouseEnter={addCursorBorder}
@@ -21,6 +22,7 @@ const Contact = () => {
           </a>
           <br />
           <a
+            title="Email"
             className="contact-text"
             href="mailto:cmdc.business@gmail.com"
             onMouseEnter={addCursorBorder}
@@ -30,6 +32,7 @@ const Contact = () => {
           </a>
         </div>
         <a
+          title="Map Position"
           href="https://www.google.com/maps?q=Potenza,+85100"
           onMouseEnter={addCursorBorder}
           onMouseLeave={removeCursorBorder}

@@ -1,10 +1,15 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import useCursorStyle from "../../../hooks/useCursorStyle";
 import useWindowSize from "../../../hooks/useWindowSize";
 import useStyledTheme from "../../../hooks/useStyledTheme";
 import CanvasEraser from "../../CanvasEraser";
 import { BannerSection, BannerTitle, VideoContainer } from "./styles";
+
+const Video = dynamic(import("../../common/video"), {
+  ssr: false,
+});
 
 const titleAnimation = {
   animate: {
@@ -25,6 +30,18 @@ const itemTitleAnimation = {
   },
 };
 
+const seoH1 = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: { rect: [0, 0, 0, 0] },
+  whiteSpace: "nowrap",
+  borderWidth: 0,
+};
+
 const Banner = () => {
   const canvasRef = React.useRef(null);
   const windowSize = useWindowSize();
@@ -34,15 +51,7 @@ const Banner = () => {
   return (
     <BannerSection style={{ height: windowSize.height }}>
       <VideoContainer>
-        <video
-          src="/videos/cmdc.mp4"
-          height="100%"
-          width="100%"
-          loop
-          autoPlay
-          muted
-          playsInline
-        />
+        <Video src="/videos/cmdc.mp4" height="100%" width="100%" />
       </VideoContainer>
       <CanvasEraser
         ref={canvasRef}
@@ -61,6 +70,14 @@ const Banner = () => {
         {/* <motion.span variants={itemTitleAnimation}>DIG</motion.span> */}
         <motion.span variants={itemTitleAnimation}>cmdc</motion.span>
       </BannerTitle>
+      <h1 style={seoH1}>
+        cmdc is an it consulting specialized in projects development, analysis
+        and projectation of software solutions, cloud technology and native
+        applications
+      </h1>
+      <h3 style={seoH1}>
+        coding is a passion for us and make thing well its a must
+      </h3>
     </BannerSection>
   );
 };

@@ -5,7 +5,7 @@ import { ServerStyleSheet } from "styled-components";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           {/* eslint-disable-next-line */}
           <meta charSet="utf-8" />
@@ -25,8 +25,15 @@ class MyDocument extends Document {
             media="(prefers-color-scheme: dark)"
             content="black"
           />
+          <meta name="apple-mobile-web-app-status-bar" content="#74FEFF" />
+
+          <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="76x76" href="/favicon.png" />
+          <link
+            rel="apple-touch-icon"
+            sizes="96x96"
+            href="/logo/logo-96x96.png"
+          />
           <link rel="stylesheet" href="https://use.typekit.net/yzi3byl.css" />
 
           {/* Google Analytics */}

@@ -11,7 +11,7 @@ const SiteOfTheDay = () => {
   return (
     <Container onMouseEnter={addCursorBorder} onMouseLeave={removeCursorBorder}>
       <Link href="http://cmdc.it" passHref>
-        <a target="_blank">
+        <a target="_blank" rel="noopener">
           <svg width="53.08" height="171.358">
             <path fill={theme.text} d="M0 0h53.08v171.358H0z"></path>
             <g fill={theme.background}>

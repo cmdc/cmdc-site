@@ -5,9 +5,14 @@ import StickyCursor from "../StickyCursor";
 import { Container, Link } from "./styles";
 
 const medias = [
-  { component: Instagram, url: "https://www.instagram.com/cmdcbusiness/" },
+  {
+    component: Instagram,
+    title: "Instagram",
+    url: "https://www.instagram.com/cmdcbusiness/",
+  },
   {
     component: Linkedin,
+    title: "Linkedin",
     url: "https://www.linkedin.com/company/cmdcbusiness/",
   },
 ];
@@ -17,11 +22,13 @@ const SocialMedia = (props) => {
 
   return (
     <Container {...props}>
-      {medias.map(({ component: Component, url }) => (
+      {medias.map(({ component: Component, url, title }) => (
         <StickyCursor key={url}>
           <Link
             target="_blank"
+            rel="noopener"
             href={url}
+            title={title}
             onMouseEnter={addCursorBorder}
             onMouseLeave={removeCursorBorder}
           >
