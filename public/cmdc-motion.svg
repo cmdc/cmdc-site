@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120"
+    shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <style>
+        <![CDATA[
+        .cmdc-4-t {
+            animation-name: cmdc-4-t__tr;
+            animation-duration: 1100ms;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-4-t__tr {
+            0% {
+                transform: translate(76.392058px, 101.096835px) rotate(0deg)
+            }
+
+            30% {
+                transform: translate(76.392058px, 101.096835px) rotate(0deg)
+            }
+
+            53.333333% {
+                transform: translate(76.392058px, 101.096835px) rotate(46.052106deg)
+            }
+
+            100% {
+                transform: translate(76.392058px, 101.096835px) rotate(46.052106deg)
+            }
+        }
+
+        .cmdc-2-t {
+            animation-name: cmdc-2-t__tr;
+            animation-duration: 1100ms;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-2-t__tr {
+            0% {
+                transform: translate(84.1149px, 80.726652px) rotate(-90deg)
+            }
+
+            30% {
+                transform: translate(84.1149px, 80.726652px) rotate(-90deg)
+            }
+
+            53.333333% {
+                transform: translate(84.1149px, 80.726652px) rotate(1.50101deg)
+            }
+
+            100% {
+                transform: translate(84.1149px, 80.726652px) rotate(1.50101deg)
+            }
+        }
+
+        .cmdc-1-tt {
+            animation-name: cmdc-1-tt__to;
+            animation-duration: 1100ms;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-1-tt__to {
+            0% {
+                transform: translate(41.704669px, 80.726652px)
+            }
+
+            30% {
+                transform: translate(41.704669px, 80.726652px)
+            }
+
+            53.333333% {
+                transform: translate(32.52812px, 84.98546px)
+            }
+
+            100% {
+                transform: translate(32.52812px, 84.98546px)
+            }
+        }
+
+        .cmdc-1-t {
+            animation-name: cmdc-1-t__tr;
+            animation-duration: 1100ms;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-1-t__tr {
+            0% {
+                transform: rotate(90deg)
+            }
+
+            30% {
+                transform: rotate(90deg)
+            }
+
+            53.333333% {
+                transform: rotate(42.219117deg)
+            }
+
+            100% {
+                transform: rotate(42.219117deg)
+            }
+        }
+
+        .octopus-4 {
+            animation-name: octopus-4;
+            animation-duration: 1400ms;
+            animation-delay: 1300ms;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes octopus-4 {
+            from {
+                stroke-dashoffset: 74.49;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .octopus-3 {
+            animation-name: octopus-3;
+            animation-duration: 1600ms;
+            animation-delay: 1300ms;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes octopus-3 {
+            from {
+                stroke-dashoffset: 239.3;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .octopus-2 {
+            animation-name: octopus-2;
+            animation-duration: 1400ms;
+            animation-delay: 1300ms;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes octopus-2 {
+            from {
+                stroke-dashoffset: 76.69;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .octopus-1 {
+            animation-name: octopus-1;
+            animation-duration: 1400ms;
+            animation-delay: 1300ms;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes octopus-1 {
+            from {
+                stroke-dashoffset: 73.34;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .cmdc-4 {
+            animation-name: cmdc-4;
+            animation-duration: 1100ms;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-4 {
+            from {
+                stroke-dashoffset: 70.85;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .cmdc-3 {
+            animation-name: cmdc-3;
+            animation-duration: 1100ms;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-3 {
+            from {
+                stroke-dashoffset: 70.86;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .cmdc-2 {
+            animation-name: cmdc-2;
+            animation-duration: 1100ms;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-2 {
+            from {
+                stroke-dashoffset: 70.85;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .cmdc-1 {
+            animation-name: cmdc-1;
+            animation-duration: 1100ms;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cmdc-1 {
+            from {
+                stroke-dashoffset: 70.86;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        ]]>
+    </style>
+    <path class="octopus-4"
+        d="M58.246811,66.620721L64.106738,72.585205C64.704612,73.189231,65.302838,73.792965,65.901085,74.39672C69.206257,77.732324,72.511968,81.068688,75.768216,84.463268C77.917682,86.713153,78.804989,89.854454,78.434424,92.886685C78.067266,95.89103,76.471888,98.709068,73.917354,100.389285C71.43425,102.173914,68.285257,102.625059,65.399217,101.876503C62.517142,101.128976,59.961584,99.198246,58.626951,96.436529C57.581564,94.471449,57.281038,92.297356,57.591803,90.176438C57.910514,88.001291,58.885293,85.88956,60.298778,84.197589C60.368993,84.11354,60.448887,84.035436,60.521597,83.962814"
+        transform="translate(8.376288 8.888544)" fill="none" stroke="#74feff" stroke-width="7" stroke-dashoffset="74.49"
+        stroke-dasharray="74.49" />
+    <g class="cmdc-4-t" transform="translate(76.392058,101.096835) rotate(0)">
+        <path class="cmdc-4"
+            d="M24.450459,36.59789L43.345626,36.59789L43.980908,36.59789C45.537005,36.591384,46.78117,36.550282,47.979535,36.870943C50.398246,37.460411,52.473576,39.032886,53.703875,41.112894C54.529135,42.481305,54.939725,44.044154,55,45.608742C54.927908,47.610836,54.506759,49.173041,53.687387,50.517246C52.713506,52.137052,51.250677,53.438248,49.538587,54.196933C48.433445,54.692731,47.244883,54.937874,46.052358,55C44.11333,54.942337,42.611512,54.563427,41.301722,53.813304C39.91961,53.032489,38.761914,51.902943,37.941463,50.566517C37.071827,49.149749,36.618116,47.489468,36.6047,45.829137C36.594264,44.549274,36.606006,40.345031,36.6047,39.591777"
+            transform="matrix(1,0,0,1,-43.872048,-45.796596)" fill="none" stroke="#74feff" stroke-width="6"
+            stroke-dasharray="70.854995" />
+    </g>
+    <path class="octopus-3"
+        d="M45.13105300000001,53.560708999999996C43.462568000000005,51.827284 41.767813000000004,50.120425 40.073395000000005,48.413706C37.810884,46.134771 35.549087,43.855966 33.295211,41.46002C29.517353,37.262147 27.444889,31.747919 27.182512,26.131726C26.92111,20.536377 28.458014,14.866191 31.782376,10.33146C34.637107,6.234487 38.767265,3.187019 43.390681,1.5023279999999999C48.008608,-0.18036399999999997 53.106673,-0.49914999999999987 57.887193,0.798258C66.022733,2.84849 72.846382,9.436173 75.253197,17.56071099999999C77.424194,24.556712999999988 76.32318000000001,32.504181999999986 72.308717,38.67044099999999C70.56498500000001,41.267293999999985 68.36085100000001,43.465803999999984 66.139098,45.64799799999999C65.235274,46.53572799999999 64.330966,47.42244199999999 63.406916,48.40919799999999C58.12991,53.77311799999999 52.847055000000005,59.13111299999999 47.564198000000005,64.48910699999999C42.28315500000001,69.84526299999999 37.00211000000001,75.20141799999999 31.726916000000006,80.563498C31.369836000000006,80.929024 30.997995000000007,81.298358 30.625817000000005,81.667834C29.622329000000004,82.664036 28.606449000000005,83.653752 27.760389000000004,84.793347C26.006236000000005,87.19591700000001 25.425218000000005,90.388796 26.083800000000004,93.324314C26.814656000000006,96.745931 29.384325000000004,99.684359 32.681191000000005,100.86009C34.412791000000006,101.495721 36.307977,101.60694 38.108332000000004,101.252675C39.88511900000001,100.903048 41.57694600000001,100.098147 42.98251200000001,98.801132C44.350269000000004,97.594452 45.34076900000001,96.001568 45.904331000000006,94.270015C46.474056000000004,92.51952800000001 46.609828,90.620186 46.195238,88.675381C45.830560000000006,86.58195699999999 44.601653000000006,84.792041 43.274832,83.202879"
+        transform="translate(8.376288,8.888544)" fill="none" stroke="#74feff" stroke-width="7" stroke-dashoffset="239.3"
+        stroke-dasharray="239.296589" />
+    <path class="cmdc-3"
+        d="M18.4024,24.448725l-.020686,4.558876c.020786,2.239162.020424,4.478318.020186,6.717581l-.000192,4.530807.000692,3.927075c.009008,1.270654.051823,2.532983-.26045,3.746513-.514256,2.153456-1.806457,4.044013-3.552031,5.310846-1.522044,1.117022-3.380554,1.708638-5.24632,1.75875-2.454939-.063924-4.629409-.868941-6.258767-2.342978C1.197464,50.985636,0.088592,48.555723,0,46.076649c.052408-1.741865.327679-3.022305.883286-4.18353.976736-2.084616,2.745314-3.751687,4.854055-4.608282c1.165111-.479384,2.414136-.68575,3.657057-.684838c1.120199-.004103,5.162527.001505,6.020998,0"
+        transform="translate(32.500001,55.34018)" fill="none" stroke="#74feff" stroke-width="6"
+        stroke-dasharray="70.859957" />
+    <path class="octopus-2"
+        d="M69.82181100000003,56.395721L69.15871900000002,55.725634C74.59285000000001,61.209886999999995 80.00927800000002,66.71194299999999 85.47643200000002,72.266589C87.72449900000001,74.646053 91.09677,75.897166 94.42305900000001,75.385915C97.850547,74.944308 100.912734,72.55364900000001 102.334816,69.334214C103.175161,67.499844 103.419579,65.424749 103.132559,63.434561C102.849234,61.469997 102.046176,59.57669 100.666946,58.013739C99.450452,56.561739 97.812717,55.523970000000006 96.031688,54.957843000000004C94.241388,54.388769 92.298047,54.293310000000005 90.336596,54.806057C88.598105,55.19122900000001 86.226459,56.954447 83.022863,59.572301"
+        transform="translate(8.376289,8.888544)" fill="none" stroke="#74feff" stroke-width="7"
+        stroke-dashoffset="76.690584" stroke-dasharray="76.690584" />
+    <g class="cmdc-2-t" transform="translate(84.1149,80.726652) rotate(-90)">
+        <path class="cmdc-2"
+            d="M30.478877,6.076307L49.374043,6.076307L50.009326,6.076307C51.565423,6.069802,52.809587,6.028699,54.007952,6.349361C56.426664,6.938829,58.501994,8.511304,59.732292,10.591312C60.557553,11.959723,60.968143,13.522572,61.028418,15.08716C60.956325,17.089253,60.535177,18.651459,59.715805,19.995664C58.741923,21.61547,57.279094,22.916666,55.567005,23.675351C54.461863,24.171149,53.273301,24.416292,52.080776,24.478418C50.141748,24.420754,48.63993,24.041845,47.33014,23.291721C45.948028,22.510907,44.790331,21.38136,43.969881,20.044934C43.100245,18.628166,42.646534,16.967886,42.633118,15.307555C42.622681,14.027692,42.634424,9.823448,42.633118,9.070195"
+            transform="translate(-35.641947,-21.136021)" fill="none" stroke="#74feff" stroke-width="6"
+            stroke-dasharray="70.854994" />
+    </g>
+    <path class="octopus-1"
+        d="M34.510013,55.74434C31.70767,58.564953,28.920943,61.399419,26.134059,64.23402C24.087652,66.315467,22.041163,68.396989,19.988339,70.473261C19.805222,70.65846,19.622165,70.848101,19.437784,71.038995C17.521764,73.022696,15.417479,74.870831,12.682437,75.390383C10.001177,75.995972,7.198887,75.407325,4.916315,73.943292C2.643874,72.485756,0.924765,70.182302,0.32144,67.496463C-0.421495,64.671831,0.159627,61.678464,1.69084,59.266458C3.23332,56.836702,5.708213,55.04771,8.562183,54.540915C11.867888,53.812321,15.125115,55.082351,17.746811,57.120721C17.854303,57.204296,17.97513,57.312616,18.078835,57.415621"
+        transform="translate(8.376288,8.888544)" fill="none" stroke="#74feff" stroke-width="7"
+        stroke-dashoffset="73.338203" stroke-dasharray="73.338203" />
+    <g class="cmdc-1-tt" transform="translate(41.704669,80.726652)">
+        <g class="cmdc-1-t" transform="rotate(90)">
+            <path class="cmdc-1"
+                d="M24.4729,-6.070499L24.452214,-1.511624C24.473,0.727538,24.472638,2.966694,24.4724,5.205957L24.472207,9.736765L24.4729,13.663839C24.481908,14.934494,24.524722,16.196822,24.212449,17.410352C23.698194,19.563808,22.405992,21.454365,20.660419,22.721198C19.138375,23.83822,17.279865,24.429836,15.414098,24.479948C12.959159,24.416024,10.78469,23.611007,9.155331,22.13697C7.267963,20.466412,6.159092,18.036498,6.070499,15.557424C6.122908,13.81556,6.398179,12.53512,6.953786,11.373894C7.930522,9.289279,9.6991,7.622208,11.80784,6.765612C12.972952,6.286228,14.221977,6.079862,15.464897,6.080774C16.585096,6.076672,20.627424,6.082279,21.485895,6.080774"
+                transform="translate(-31.456966,-15.275281)" fill="none" stroke="#74feff" stroke-width="6"
+                stroke-dasharray="70.859955" />
+        </g>
+    </g>
+</svg>
