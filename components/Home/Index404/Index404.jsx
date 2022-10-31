@@ -16,13 +16,9 @@ const Index404 = () => {
             or visiting a different link.
           </p>
           <p>
-            <Link href="/">
-              <a style={{ marginTop: "2rem" }}>
-                Go back home
-                <ArrowRightIcon
-                  style={{ width: "2.25rem", height: "2.25rem" }}
-                />
-              </a>
+            <Link href="/" style={{ marginTop: "2rem" }}>
+              Go back home
+              <ArrowRightIcon style={{ width: "2.25rem", height: "2.25rem" }} />
             </Link>
           </p>
         </TextWrapper>

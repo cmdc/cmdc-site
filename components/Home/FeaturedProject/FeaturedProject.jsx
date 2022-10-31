@@ -80,7 +80,12 @@ const FeaturedProject = () => {
     <ContentSection>
       <AnimateOnScreen>
         <motion.div>
-          <Link title="Sani3d" href="https://sani3d.online" passHref>
+          <Link
+            title="Sani3d"
+            href="https://sani3d.online"
+            passHref
+            legacyBehavior
+          >
             <ProjectAnchor
               onHoverStart={handleAnchorHoverStart}
               onHoverEnd={handleAnchorHoverEnd}

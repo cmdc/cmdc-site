@@ -117,7 +117,7 @@ const Menu = () => {
                       ease: transition.ease,
                     }}
                   >
-                    <NextLink href={route.path}>
+                    <NextLink href={route.path} legacyBehavior>
                       <Link
                         key={`${route.id}_${isMobile}`}
                         name={route.id}

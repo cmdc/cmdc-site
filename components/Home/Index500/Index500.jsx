@@ -13,13 +13,9 @@ const Index500 = () => {
           <h2>Server Error</h2>
           <p>Sorry, we have a problem. We are working on it.</p>
           <p>
-            <Link href="/">
-              <a style={{ marginTop: "2rem" }}>
-                Go back home
-                <ArrowRightIcon
-                  style={{ width: "2.25rem", height: "2.25rem" }}
-                />
-              </a>
+            <Link href="/" style={{ marginTop: "2rem" }}>
+              Go back home
+              <ArrowRightIcon style={{ width: "2.25rem", height: "2.25rem" }} />
             </Link>
           </p>
         </TextWrapper>
