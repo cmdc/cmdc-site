@@ -193,12 +193,12 @@
             }
 
             62.5% {
-                stroke-dashoffset: 0;
+                stroke-dashoffset: 70.86;
                 opacity: 0.2;
             }
 
             75% {
-                stroke-dashoffset: 0;
+                stroke-dashoffset: 70.86;
                 opacity: 0.1;
             }
 
@@ -241,7 +241,7 @@
             }
 
             75% {
-                stroke-dashoffset: 0;
+                stroke-dashoffset: attr(stroke-dasharray)/2;
                 opacity: 0.3;
             }
 
