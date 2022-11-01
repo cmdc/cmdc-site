@@ -4,9 +4,7 @@ import { useThemeContext } from "../../context/theme";
 import useCursorStyle from "../../hooks/useCursorStyle";
 import useStyledTheme from "../../hooks/useStyledTheme";
 
-const Logo = (props) => {
-  const { buttonProps = {}, ...rootProps } = props;
-
+const Logo = ({ buttonProps = {}, ...rootProps }) => {
   const theme = useStyledTheme();
   const [, dispatch] = useThemeContext();
   const {
@@ -29,21 +27,21 @@ const Logo = (props) => {
 
   return (
     <div
-      fill={theme.text}
       onMouseEnter={addCursorBorder}
       onMouseLeave={removeCursorBorder}
       onClick={handleToggleTheme}
       {...rootProps}
     >
       <Image
+        unoptimized
         alt={"cmdc logo motion"}
         src={"/cmdc-motion.svg"}
         role={"button"}
         fill
         priority
         sizes="(max-width: 768px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw"
+          (max-width: 1200px) 50vw,
+          33vw"
         onMouseEnter={() => addCursorColor(theme.text)}
         onMouseLeave={resetCursorColor}
         {...buttonProps}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Seo from "../../components/common/seo";
 import clientPromise from "../../lib/mongodb";
