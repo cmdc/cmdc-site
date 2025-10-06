@@ -47,6 +47,13 @@ class MyDocument extends Document {
           `,
             }}
           />
+
+          {/* Google AdSense */}
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9577545050286720"
+            crossOrigin="anonymous"
+          />
         </Head>
         <body className="text-blueGray-700 antialiased">
           <div id="page-transition"></div>
