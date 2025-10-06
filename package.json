@@ -63,5 +63,9 @@
   "author": {
     "name": "cmdc - cmdc.business@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.3",
+    "yarn": ">=1.22.0"
+  }
 }
